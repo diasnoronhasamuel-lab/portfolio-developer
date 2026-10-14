@@ -1,0 +1,84 @@
+.about-illustration {
+  margin: 2rem 0 0;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.about-illustration svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-illustration figcaption {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.about-illustration .ti-box {
+  fill: rgba(255, 255, 255, 0.04);
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 1.5;
+}
+
+.about-illustration text {
+  font-family: ui-monospace, Consolas, 'Courier New', monospace;
+  fill: #cbd5e1;
+}
+
+.about-illustration .ti-big {
+  font-size: 18px;
+  font-weight: 700;
+  fill: #e2e8f0;
+}
+
+.about-illustration .ti-label {
+  font-size: 13px;
+  fill: #94a3b8;
+}
+
+.about-illustration .ti-code {
+  font-size: 13px;
+}
+
+.about-illustration .ti-ok {
+  fill: #4ade80;
+}
+
+.about-illustration .ti-flow {
+  stroke: #4fd1ff;
+  stroke-width: 2;
+  stroke-dasharray: 6 6;
+  animation: ti-dash 1.6s linear infinite;
+}
+
+@keyframes ti-dash {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-illustration .ti-flow {
+    animation: none;
+  }
+}
+
+.project-visual-image {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-visual-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+}

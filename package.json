@@ -1,0 +1,12 @@
+{
+  "name": "meu-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n client,server -c cyan,magenta \"npm:dev:client\" \"npm:dev:server\"",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
